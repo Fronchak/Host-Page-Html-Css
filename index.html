@@ -1,12 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/87424f677c.js" crossorigin="anonymous"></script>
+    <title>hDC Host</title>
 </head>
 <body>
-    
+    <div class="page-container">
+        <div class="navbar-container">
+            <div class="navbar-logo-container">
+                <img src="./assets/imgs/hdchostlogo.png" alt="company-logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#section-home">HOME</a></li>
+                    <li><a href="#section-quality">QUALIDADE</a></li>
+                    <li><a href="#section-plans">PLANOS</a></li>
+                    <li><a href="#section-contato">CONTATO</a></li>
+                    <li><a class="login-button" href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-banner-container">
+            <h1>hDC Host</h1>
+            <p>Os melhores planos para qualquer tipo de projeto!</p>
+        </div>
+        <main>
+            <section id="section-quality">
+                <header>
+                    <h2>Nossa garantia de qualidade</h2>
+                    <div class="quality-cards-container">
+                        <div class="quality-card-container">
+                            <i class="fas fa-shield-alt quality-icon"></i>
+                            <h3 class="quality-title">Segurança</h3>
+                            <p class="quality-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit est natus in accusamus a tenetur autem delectus. Magnam nesciunt, itaque atque iste pariatur eaque inventore ducimus aspernatur quibusdam architecto rerum.</p>
+                        </div>
+                        <div class="quality-card-container">
+                            <i class="fas fa-rocket quality-icon"></i>
+                            <h3 class="quality-title">Velocidade</h3>
+                            <p class="quality-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur perferendis fugit temporibus ut dicta voluptatibus, quos, dolor enim tempora quod placeat iste asperiores, ratione numquam quidem! Fugit, quo animi!</p>
+                        </div>
+                        <div class="quality-card-container">
+                            <i class="fas fa-comments quality-icon"></i>
+                            <h3 class="quality-title">Suporte</h3>
+                            <p class="quality-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minus quam sapiente quibusdam, sed eaque consequatur similique aliquid debitis nam cumque recusandae expedita, eum iusto aspernatur? Voluptatem enim voluptate magni?</p>
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="section-plans">
+                <header>
+                    <h1>Planos e Preços</h1>
+                    <p>Selecione o plano perfeito para você</p>
+                    <div class="plan-cards-container">
+                        <div class="plan-card-container">
+                            <ul>
+                                <li class="plan-price">R$ 15/mês</li>
+                                <li class="plan-name">PADRÃO</li>
+                                <li>2GB de espaço em disco</li>
+                                <li>10 Sub-domínios</li>
+                                <li>25 Contas de e-mail</li>
+                                <li>C-panel</li>
+                                <li>Suporte 24/7</li>
+                                <li class="plan-button">Selecionar</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card-container">
+                            <ul>
+                                <li class="plan-price">R$ 30/mês</li>
+                                <li class="plan-name">DEDICADO</li>
+                                <li>5GB de espaço em disco</li>
+                                <li>20 Sub-domínios</li>
+                                <li>50 Contas de e-mail</li>
+                                <li>C-panel</li>
+                                <li>Suporte 24/7</li>
+                                <li class="plan-button">Selecionar</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card-container">
+                            <ul>
+                                <li class="plan-price recomended">R$ 50/mês</li>
+                                <li class="plan-name">DEDICADO PLUS</li>
+                                <li>10GB de espaço em disco</li>
+                                <li>100 Sub-domínios</li>
+                                <li>C-panel</li>
+                                <li>Suporte 24/7</li>
+                                <li class="plan-button recomended">Selecionar</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card-container">
+                            <ul>
+                                <li class="plan-price">R$ 100/mês</li>
+                                <li class="plan-name">CLOUD</li>
+                                <li>20GB de espaço em disco</li>
+                                <li>200 Sub-domínios</li>
+                                <li>C-panel</li>
+                                <li>Suporte 24/7</li>
+                                <li class="plan-button">Selecionar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="section-search">
+                <header>
+                    <h2>Buscar um domínio</h2>
+                    <p>Veja se o domínio que você deseja está disponível</p>
+                </header>
+                <form class="search-form">
+                    <input type="text" name="search" id="search" placeholder="Digite seu domínio desejado">
+                    <input type="submit" value="Buscar Domínio"> 
+                </form>
+            </section>
+            <section id="section-contact">
+                <header>
+                    <h2>Entre em contato</h2>
+                    <p>Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para o seu negócio</p>
+                    <form class="contact-form">
+                        <div class="contact-form-inputs-container">
+                            <input type="text" name="name" id="name" placeholder="Seu nome">
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </header>
+            </section>
+        </main>
+        <footer>
+            <p>horaDeCodar @ 2019</p>
+        </footer>
+    </div>
 </body>
 </html>
