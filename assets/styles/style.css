@@ -36,8 +36,9 @@ h1, h2, h3 {
 }
 
 .main-banner-container,
-main section {
-    margin-bottom: 60px;
+main section,
+.section {
+    margin-bottom: 80px;
 }
 
 /* Page container */
@@ -63,6 +64,7 @@ main section {
     top: 0;
     width: 100%;
     max-width: 1400px;
+    z-index: 1;
 }
 
 .navbar-options ul {
@@ -125,7 +127,8 @@ main section {
 /* quality section */
 
 #section-quality {
-    margin: 0 80px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 #section-quality h2 {
@@ -169,3 +172,83 @@ main section {
 .fa-comments {
     color: #EF8F29;
 }
+
+/* section plan */
+
+#section-plans {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#section-plans h1 {
+    margin-bottom: 20px;
+}
+
+#section-plans p {
+    margin-bottom: 80px;
+}
+
+.plan-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan-card-container {
+    flex: 1 1 200px;
+    max-width: 250px;
+    margin-bottom: 80px;
+}
+
+.plan-card-container ul {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.plan-card-container ul li {
+    color: #333;
+    background-color: #e8e9ea;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.plan-card-container ul .plan-name {
+    background-color: #202b34;
+    color: #fff;
+    padding: 50px 0 20px;
+    font-size: 16px;
+}
+
+.plan-card-container ul .plan-price {
+    background-color: #2CC76A;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: 50px;
+}
+
+.plan-card-container ul .plan-price.recomended {
+    background-color: #f45c57;
+}
+
+.plan-card-container ul .plan-button {
+    background-color: #2CC76A;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.plan-card-container ul .plan-button.recomended {
+    background-color: #f45c57;
+}
+
+
