@@ -20,7 +20,7 @@
                     <li><a href="#section-quality">QUALIDADE</a></li>
                     <li><a href="#section-plans">PLANOS</a></li>
                     <li><a href="#section-contato">CONTATO</a></li>
-                    <li><a class="login-button" href="#">LOGIN</a></li>
+                    <li><a class="login-button button" href="#">LOGIN</a></li>
                 </ul>
             </nav>
         </div>
@@ -114,25 +114,27 @@
                 </header>
                 <form class="search-form">
                     <input type="text" name="search" id="search" placeholder="Digite seu domínio desejado">
-                    <input type="submit" value="Buscar Domínio"> 
+                    <input type="submit" value="Buscar Domínio" class="button"> 
                 </form>
             </section>
             <section id="section-contact">
                 <header>
                     <h2>Entre em contato</h2>
                     <p>Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para o seu negócio</p>
-                    <form class="contact-form">
-                        <div class="contact-form-inputs-container">
-                            <input type="text" name="name" id="name" placeholder="Seu nome">
-                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                        </div>
-                        <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
-                        <input type="submit" value="Enviar">
-                    </form>
                 </header>
+                <form class="contact-form">
+                    <div class="contact-form-inputs-container">
+                        <input type="text" name="name" id="name" placeholder="Seu nome">
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="textarea-container">
+                        <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="button">
+                </form>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <p>horaDeCodar @ 2019</p>
         </footer>
     </div>

@@ -8,6 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ddd;
 }
@@ -16,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 li {
@@ -35,8 +43,6 @@ h1, h2, h3 {
     color: #333;
 }
 
-.main-banner-container,
-main section,
 .section {
     margin-bottom: 80px;
 }
@@ -91,14 +97,16 @@ main section,
     height: 100%;
 }
 
-.login-button {
+.button {
     padding: 8px 16px;
     background-color: #2CC76A;
     border-radius: 5px;
-    color:#fff
+    color:#fff;
+    cursor: pointer;
+    transition: 0.6s;
 }
 
-.login-button:hover {
+.button:hover {
     color:  #ccc;
     background-color: #22BB5F;
 }
@@ -251,4 +259,118 @@ main section,
     background-color: #f45c57;
 }
 
+/* section search */
 
+#section-search {
+    background-color: #34454e;
+    padding: 50px 0;
+}
+
+#section-search h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#section-search p {
+    color: #D5D5D5;
+    margin-bottom: 15px;
+}
+
+.search-form input {
+    display: block;
+    margin: 0 auto 15px;
+    
+}
+
+.search-form input[type="text"] {
+    width: 60%;
+    padding: 15px;
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.search-form input[type="text"]:focus {
+    background-color: #ddd;
+}
+
+.search-form .button {
+    width: 15%;
+    padding: 12px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* contact form */
+
+#section-contact {
+    padding: 0 80px;
+}
+
+#section-contact h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+#section-contact p {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-form-inputs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.textarea-container {
+    width: 100%;
+    display: flex;
+}
+
+.contact-form-inputs-container input {
+    flex: 1 1 250px;
+}
+
+.contact-form .button {
+    width: 30%;
+    border: none;
+}
+
+#footer {
+    padding: 100px 0;
+}
+
+#footer p {
+    font-size: 18px;
+    font-weight: bold
+}
